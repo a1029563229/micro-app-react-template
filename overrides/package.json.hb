@@ -9,9 +9,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1",
-    "nprogress": "^0.2.0", 
-    "qiankun": "^2.0.11"
+    "react-scripts": "3.4.1"{{#if hasExternals}},{{/if}}
+    {{{externals}}}
   },
   "devDependencies": {
     "eslint": "6.6.0",

@@ -20,8 +20,8 @@ module.exports = {
 
   devServer: function (configFunction) {
     return function (proxy, allowedHost) {
-      {{#unless isMain}}
       const config = configFunction(proxy, allowedHost);
+      {{#unless isMain}}
       // 关闭主机检查，使微应用可以被 fetch
       config.disableHostCheck = true;
       // 配置跨域请求头，解决开发环境的跨域问题

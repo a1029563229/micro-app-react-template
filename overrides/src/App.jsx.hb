@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 import Home from "./pages/home";
 {{#if isMain}}
+{{{{raw}}}}
 import "./App.css";
 
 const menus = [
@@ -56,7 +57,9 @@ const App = () => {
     </Router>
   );
 };
+{{{{/raw}}}}
 {{else}}
+{{{{raw}}}}
 import List from "./pages/list";
 
 const menus = [
@@ -108,5 +111,6 @@ const App = () => {
     </Router>
   );
 };
+{{{{/raw}}}}
 {{/if}}
 export default App;
